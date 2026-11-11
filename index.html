@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en" data-type="place" data-radius="soft" data-buttons="solid" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soft Spot: massage studio on Harbour Lane</title>
+<meta name="description" content="One therapist and one room: relaxing, deep tissue, neck and shoulder sessions and foot reflexology from €40, Tuesday to Saturday.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Soft Spot: massage studio on Harbour Lane">
+<meta property="og:description" content="Massage sessions from €40, with a two-question finder and a booking request.">
+<meta property="og:image" content="share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f3f1ec">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="place">
+<meta name="page-kind" content="place">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..600&family=Figtree:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #f3f1ec; --p-surface: #e6e2d9; --p-ink: #1d2530; --p-muted: #5a6270;
+  --p-accent: #2c5877; --p-accent-ink: #ffffff; --p-action: #2c5877; --p-action-ink: #ffffff;
+  --p-inv-bg: #1d2530; --p-inv-surface: #29313b; --p-inv-ink: #f3f1ec; --p-inv-muted: #9a9d9f;
+  --p-inv-accent: #f3f1ec; --p-inv-accent-ink: #1d2530; --p-inv-action: #f3f1ec; --p-inv-action-ink: #1d2530;
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-text: "Figtree", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.03em;
+}
+</style>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/picture-develops/moment.js">
+<style>
+  /* page CSS: the visit panel, the photographs' crops, the session finder and the booking pair */
+  .pl-photo { margin: 0; }
+  .pl-photo > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  #visit .pl-photo > img { aspect-ratio: 1 / 1; }
+  .head-row { margin-bottom: var(--s-7); align-items: start; }
+  .head-row p { margin: 0; }
+  .rows__desc { display: block; color: var(--muted); font-weight: 400; }
+  .strip { margin-top: var(--s-7); }
+  .strip .pl-photo > img { aspect-ratio: 1 / 1; }
+  .finder { display: grid; gap: var(--s-6); }
+  .finder fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .finder legend { padding: 0; margin-bottom: var(--s-3); font: 500 var(--t-card)/1.3 var(--font-text); }
+  .chips { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+  .chips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 var(--s-5); }
+  .chip { display: flex; align-items: center; gap: var(--s-3); min-height: 44px; cursor: pointer; border-bottom: 1px solid var(--line); }
+  .chip:hover span { text-decoration: underline; text-underline-offset: 3px; }
+  .chip input { margin: 0; width: 18px; height: 18px; accent-color: var(--action); }
+  .chip span small { margin-left: var(--s-2); color: var(--muted); font-size: 14px; }
+  .finder__note { margin: 0; }
+  .finder-result { display: grid; gap: var(--s-4); align-content: start; }
+  .result__name { margin: 0; font: var(--display-weight) var(--t-h3)/1.2 var(--font-display); letter-spacing: var(--display-tracking); }
+  .result__why { margin: 0; }
+  #book .pl-photo > img { aspect-ratio: 4 / 3; }
+  @media (max-width: 639px) { .strip { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--s-6); } .strip .pl-photo { grid-column: auto; } .strip .pl-photo:nth-child(n+3), .finder__note, .rows__desc { display: none; } }
+</style>
+</head>
+<body>
+<!-- type: place (a one-room massage studio people come to); compact page, seven stand-in photographs in one warm daylight grade
+     deal: nav split (nav-cards dealt; too few frames to fill its picture cards: re-dealt), footer visit, rhythm colour-band
+     (the close on the harbour-blue brand ground), buttons solid, mark leaf; palette linen-harbour (the off-white of
+     clean linen and towels, the blue of the lane the studio is named by), type bricolage.
+     the offer: strip (four details under the session groups); the place: wall, not built (no room photographs);
+     type moment: name, not built on colour-band; rooms layout: not used.
+     moments: picture-develops on the visit photograph -->
+<header class="nav nav--split">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item"><a class="nav__link" href="#sessions">Sessions</a></div>
+      <div class="nav__item"><a class="nav__link" href="#visit">Visit</a></div>
+      <div class="nav__item"><a class="nav__link" href="#faq">Questions</a></div>
+    </nav>
+    <a class="nav__logo" href="#top"><span class="mark" data-mark="leaf" aria-hidden="true"></span>Soft Spot</a>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="#book">Request a session</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--place" data-enter aria-labelledby="hero-h">
+    <img class="hero__bg" src="assets/img/photo-f16699811-1280.jpg" srcset="assets/img/photo-f16699811-500.jpg 500w, assets/img/photo-f16699811-960.jpg 960w, assets/img/photo-f16699811-1280.jpg 1280w, assets/img/photo-f16699811.jpg 1920w" sizes="(max-width: 639px) 188vw, 100vw" width="1920" height="1280" alt="A therapist's hands working the muscle of a client's shoulder" fetchpriority="high" decoding="async" data-phone-fill data-source="stand-in" data-subject="a shoulder massage" style="--ly-pos: 50% 45%">
+    <div class="wrap"><div class="hero-text">
+      <div class="hero__text">
+        <h1 id="hero-h">Massage studio on Harbour Lane</h1>
+        <p class="hero__lead">One therapist, one room. Tuesday to Saturday, 10:00 to 19:00.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="#book">Request a session</a></div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="section" id="visit" data-place="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="grid grid--top">
+        <div class="visit span-6">
+          <h2 id="visit-h">Visit</h2>
+          <p>Mira Hale has worked as a massage therapist for eight years, first in a physiotherapy clinic and now in this studio, with time between clients so nobody is hurried.</p>
+          <div class="visit__cols" style="grid-template-columns: minmax(0, 1fr)">
+            <div class="visit__col stack-4">
+              <p class="t-label">Address</p>
+              <address class="visit__address">Harbour Lane</address>
+            </div>
+            <div class="visit__col stack-4">
+              <p class="t-label">Opening hours</p>
+              <dl class="hours"><dt data-days="tue-sat">Tue to Sat</dt><dd>10:00 to 19:00</dd><dt data-days="sun,mon">Sun and Mon</dt><dd>Closed</dd></dl>
+            </div>
+          </div>
+          <ul class="visit__rows">
+            <li><span>Cancelling</span><span>Free up to 24 hours before</span></li>
+            <li><span>Paying</span><span>Card or cash after the session</span></li>
+          </ul>
+        </div>
+        <figure class="pl-photo span-6" data-moment="picture-develops"><img src="assets/img/photo-m61880133-960.jpg" srcset="assets/img/photo-m61880133-500.jpg 500w, assets/img/photo-m61880133-960.jpg 960w" sizes="(max-width: 639px) 100vw, 50vw" width="960" height="1455" alt="A white lamp and a small box on a sill by a window with pale blinds" loading="lazy" decoding="async" data-source="stand-in" data-subject="the treatment room's window"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section g2" id="sessions" aria-labelledby="sessions-h" style="--hm: 2">
+    <div class="wrap">
+      <div class="group">
+        <div class="grid grid--top head-row">
+          <h2 class="span-6" id="sessions-h">Sessions and prices</h2>
+          <p class="span-6 start-7">In euros, tax included. Every session starts with a five-minute chat about what hurts. <a class="link" href="#book">Request a session</a></p>
+        </div>
+        <div class="grid grid--top">
+          <div class="span-4">
+            <p class="t-label">Relaxing full-body</p>
+            <ul class="rows">
+              <li><span class="rows__name">60 minutes<span class="rows__desc">Slow, even strokes, head to feet</span></span><span class="rows__value">€60</span></li>
+              <li><span class="rows__name">90 minutes<span class="rows__desc">For after a long week</span></span><span class="rows__value">€85</span></li>
+            </ul>
+          </div>
+          <div class="span-4">
+            <p class="t-label">Deep tissue</p>
+            <ul class="rows">
+              <li><span class="rows__name">60 minutes<span class="rows__desc">Firm work on tight muscle</span></span><span class="rows__value">€70</span></li>
+              <li><span class="rows__name">90 minutes<span class="rows__desc">Expect some tenderness next day</span></span><span class="rows__value">€100</span></li>
+            </ul>
+          </div>
+          <div class="span-4">
+            <p class="t-label">Focused</p>
+            <ul class="rows">
+              <li><span class="rows__name">Back, neck and shoulders<span class="rows__desc">30 minutes, fits a lunch break</span></span><span class="rows__value">€40</span></li>
+              <li><span class="rows__name">Foot reflexology<span class="rows__desc">45 minutes, after a foot soak</span></span><span class="rows__value">€45</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid strip">
+          <figure class="pl-photo span-3"><img src="assets/img/photo-m61777177-500.jpg" width="500" height="324" alt="Folded wool blankets in green and grey on a wooden table" loading="lazy" decoding="async" data-source="stand-in" data-subject="towels and blankets"></figure>
+          <figure class="pl-photo span-3"><img src="assets/img/photo-f151497936-500.jpg" width="500" height="376" alt="Wooden massage rollers and a ball tool on an orange table" loading="lazy" decoding="async" data-source="stand-in" data-subject="massage tools"></figure>
+          <figure class="pl-photo span-3"><img src="assets/img/photo-f100481712-500.jpg" width="500" height="313" alt="An open jar of pale massage balm beside its lid" loading="lazy" decoding="async" data-source="stand-in" data-subject="massage balm"></figure>
+          <figure class="pl-photo span-3"><img src="assets/img/photo-d88-500.jpg" width="500" height="685" alt="A cream ceramic lamp on a side table in low sun" loading="lazy" decoding="async" data-source="stand-in" data-subject="a lamp in the room"></figure>
+        </div>
+      </div>
+      <div class="grid grid--top" id="finder">
+        <form class="finder span-6" id="find" aria-label="Find my session">
+          <fieldset>
+            <legend>What brings you in?</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="why" value="neck"><span>Neck and shoulders</span></label>
+              <label class="chip"><input type="checkbox" name="why" value="back"><span>Lower back</span></label>
+              <label class="chip"><input type="checkbox" name="why" value="legs"><span>Tired legs and feet</span></label>
+              <label class="chip"><input type="checkbox" name="why" value="sport"><span>Sport recovery</span></label>
+              <label class="chip"><input type="checkbox" name="why" value="stress"><span>Stress or poor sleep</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>How much pressure do you like?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="press" value="gentle"><span>Gentle<small>light strokes</small></span></label>
+              <label class="chip"><input type="radio" name="press" value="medium"><span>Medium<small>firm, comfortable</small></span></label>
+              <label class="chip"><input type="radio" name="press" value="firm"><span>Firm<small>deep, intense</small></span></label>
+            </div>
+          </fieldset>
+          <p class="finder__note">Not sure? Choose medium. You can ask for more or less pressure at any moment.</p>
+        </form>
+        <div class="finder-result span-6 start-7" aria-live="polite">
+          <p class="t-label">Suggested for you</p>
+          <p class="result__name" id="rname">Answer the two questions to see a session</p>
+          <p class="result__why" id="rwhy">The finder picks one of the four sessions and its length from what you choose.</p>
+          <p><a class="link" href="#book" id="use" hidden>Request this session</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="grid grid--top">
+        <div class="span-6 stack-4">
+          <h2 id="faq-h">Questions about a session</h2>
+          <p>What people ask before their first visit. <a class="link" href="mailto:hello@softspot.example">Email a question</a></p>
+        </div>
+        <div class="faq span-6 start-7">
+          <div class="faq__item"><h3>What should I wear for a massage?</h3><p>Whatever you arrive in. You undress only as far as you’re comfortable, and you stay covered by a towel throughout.</p></div>
+          <div class="faq__item"><h3>Can I cancel or move my massage?</h3><p>Yes, free of charge up to 24 hours before. After that, send a message and we’ll sort it out.</p></div>
+          <div class="faq__item"><h3>Can I have a massage when pregnant or unwell?</h3><p>Say so when you request your session, so Mira can check it’s suitable. If you’re unsure, ask your doctor first.</p></div>
+          <div class="faq__item"><h3>How often should I book a session?</h3><p>Many people come every three to four weeks. For a specific problem, two or three visits closer together.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <div class="grid grid--top head-row">
+        <h2 class="span-6" id="book-h">Request a massage session</h2>
+        <p class="span-6 start-7">No payment now. Mira confirms the time by message within a day.</p>
+      </div>
+      <div class="grid grid--top">
+        <form class="form book-form span-6" action="mailto:hello@softspot.example" method="post" enctype="text/plain" data-endpoint="" data-sent="Your session request is in. Mira replies within a day." novalidate>
+          <div class="field field--full"><label for="f-session">Session</label>
+            <select id="f-session" name="session" required>
+              <option value="Relaxing full-body, 60 minutes">Relaxing full-body, 60 minutes, €60</option>
+              <option value="Relaxing full-body, 90 minutes">Relaxing full-body, 90 minutes, €85</option>
+              <option value="Deep tissue, 60 minutes">Deep tissue, 60 minutes, €70</option>
+              <option value="Deep tissue, 90 minutes">Deep tissue, 90 minutes, €100</option>
+              <option value="Back, neck and shoulders, 30 minutes">Back, neck and shoulders, 30 minutes, €40</option>
+              <option value="Foot reflexology, 45 minutes">Foot reflexology, 45 minutes, €45</option>
+            </select></div>
+          <div class="field"><label for="f-date">Preferred day</label>
+            <input id="f-date" name="date" type="date" required aria-describedby="f-date-err">
+            <p class="field__error" id="f-date-err" hidden>Pick a day from Tuesday to Saturday.</p></div>
+          <div class="field"><label for="f-time">Time of day</label>
+            <select id="f-time" name="time"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+          <div class="field"><label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+            <p class="field__error" id="f-name-err" hidden>Write the name the session is under.</p></div>
+          <div class="field"><label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err">
+            <p class="field__error" id="f-email-err" hidden>Write an email address with an @, like name@example.com.</p></div>
+          <div class="btn-row"><button class="btn btn--primary" type="submit">Request a session</button></div>
+          <p class="form__status" role="status" data-form-status></p>
+        </form>
+        <figure class="pl-photo span-6 start-7"><img src="assets/img/photo-f103408324-960.jpg" srcset="assets/img/photo-f103408324-500.jpg 500w, assets/img/photo-f103408324-960.jpg 960w" sizes="(max-width: 639px) 100vw, 50vw" width="960" height="640" alt="Gloved hands pressing the sole of a foot during reflexology" loading="lazy" decoding="async" data-source="stand-in" data-subject="foot reflexology"></figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing footer--visit ground-brand" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head">
+        <h2 id="close-h">Book an hour for your back</h2>
+        <p class="t-lead">Sessions from €40, Tuesday to Saturday.</p>
+      </div>
+      <a class="btn btn--primary btn--xl" href="#book">Request a session</a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-6 stack-4">
+          <address class="footer__address">Harbour Lane</address>
+          <p><a class="link" href="mailto:hello@softspot.example">Email the studio</a></p>
+        </div>
+        <div class="span-6 start-7 stack-4">
+          <h3>Opening hours</h3>
+          <dl class="hours"><dt data-days="tue-sat">Tue to Sat</dt><dd>10:00 to 19:00</dd><dt data-days="sun,mon">Sun and Mon</dt><dd>Closed</dd></dl>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span>© 2026 Soft Spot · A concept site by Nikita S.</span>
+        <a class="credits" href="credits.html">Photographs via Wikimedia Commons</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Quick actions">
+  <a class="btn btn--primary" href="#book">Request a session</a>
+</nav>
+
+<script>
+  // the session finder: two answers pick a session and fill it into the booking form
+  (function () {
+    var S = [
+      { n: 'Relaxing full-body', o: [60, 90], p: [60, 85], why: 'slow, even strokes for the whole body' },
+      { n: 'Deep tissue', o: [60, 90], p: [70, 100], why: 'firm work on stubborn muscle tension' },
+      { n: 'Back, neck and shoulders', o: [30], p: [40], why: 'a short session aimed at your upper body' },
+      { n: 'Foot reflexology', o: [45], p: [45], why: 'focused work on legs and feet' }
+    ];
+    var $ = function (id) { return document.getElementById(id); };
+    var pick = null;
+    function find() {
+      var w = [].map.call(document.querySelectorAll('input[name="why"]:checked'), function (i) { return i.value; });
+      var pr = document.querySelector('input[name="press"]:checked');
+      if (!w.length || !pr) { $('rname').textContent = 'Answer the two questions to see a session'; $('rwhy').textContent = 'The finder picks one of the four sessions and its length from what you choose.'; $('use').hidden = true; return; }
+      pr = pr.value;
+      var has = function (k) { return w.indexOf(k) > -1; }, s;
+      if (w.length === 1 && has('legs')) s = S[3];
+      else if (pr === 'firm' && (has('neck') || has('back') || has('sport'))) s = S[1];
+      else if (w.every(function (k) { return k === 'neck' || k === 'back'; }) && pr !== 'firm') s = S[2];
+      else s = S[0];
+      var i = (w.length >= 3 && s.o.length > 1) ? s.o.length - 1 : 0;
+      pick = s.n + ', ' + s.o[i] + ' minutes';
+      $('rname').textContent = s.n + ', ' + s.o[i] + ' minutes, €' + s.p[i];
+      $('rwhy').textContent = 'You chose ' + pr + ' pressure. It fits because it offers ' + s.why + '.';
+      $('use').hidden = false;
+    }
+    document.querySelectorAll('#find input').forEach(function (i) { i.addEventListener('change', find); });
+    $('use').addEventListener('click', function () { if (pick) $('f-session').value = pick; });
+    var t = new Date();
+    $('f-date').min = t.getFullYear() + '-' + String(t.getMonth() + 1).padStart(2, '0') + '-' + String(t.getDate()).padStart(2, '0');
+  })();
+</script>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>
