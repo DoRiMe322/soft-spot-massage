@@ -1,17 +1,20 @@
 # Soft Spot
 
-A concept website for a one-room massage studio on Harbour Lane: sessions and prices, a two-question session finder and a booking request. Plain HTML, CSS and JavaScript, no build step.
+A concept website for a one-room massage studio on Harbour Lane. Plain HTML, CSS and JavaScript in one file, no build step.
 
 ## What is on the page
-- A full-width photograph and one button to request a session
-- Visit: the therapist, the address, opening hours, cancelling and paying, beside a photograph that develops as it comes on screen
-- Sessions and prices in three groups with a strip of four detail photographs
-- A session finder: pick what brings you in and the pressure you like, get a session and length, and send it to the form
-- Open answers to the usual questions, a booking request form and a phone bar
+- A calm first screen with one photograph and the key facts: hours, prices from €40, free changes up to 24 hours before
+- The studio and how it works
+- Four sessions as even cards; where there are two lengths, a switch changes the price
+- A session finder: two questions suggest a session and its length, and fill it into the request form
+- What happens in the hour, in three steps
+- Questions as an accordion
+- A request form: session, a day from the next two weeks, morning, afternoon or evening, name and email, with a confirmation
+- A request bar on phones that hides when the form is on screen
 
 ## Run it
 ```bash
 npx serve .
 ```
 
-Photographs are stand-ins from Wikimedia Commons, listed in `credits.html`.
+Photographs from Unsplash (free licence). The form is a front-end demo: nothing is sent.
